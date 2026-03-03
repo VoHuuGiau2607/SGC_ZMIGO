@@ -1,0 +1,79 @@
+@Metadata.layer: #CUSTOMER
+@UI: {
+  headerInfo: {
+    typeName: 'ZmigoRequiredField', 
+    typeNamePlural: 'ZmigoRequiredFields', 
+    title: {
+      type: #STANDARD, 
+      label: 'ZMIGO - Required Field', 
+      value: 'Reference'
+    }
+  }
+}
+annotate view ZI_ZmigoRequiredField with
+{
+  @UI.identification: [ {
+    position: 1 
+  } ]
+  @UI.lineItem: [ {
+    position: 1 
+  } ]
+  @UI.facet: [ {
+    id: 'ZI_ZmigoRequiredField', 
+    purpose: #STANDARD, 
+    type: #IDENTIFICATION_REFERENCE, 
+    label: 'ZMIGO - Required Field', 
+    position: 1 
+  } ]
+  Action;
+  
+  @UI.identification: [ {
+    position: 2 
+  } ]
+  @UI.lineItem: [ {
+    position: 2 
+  } ]
+  Reference;
+  
+  @UI.identification: [ {
+    position: 3 
+  } ]
+  @UI.lineItem: [ {
+    position: 3 
+  } ]
+  Mtart;
+  
+  @UI.identification: [ {
+    position: 4 
+  } ]
+  @UI.lineItem: [ {
+    position: 4 
+  } ]
+  Bwart;
+  
+  @UI.identification: [ {
+    position: 5
+  } ]
+  @UI.lineItem: [ {
+    position: 5
+  } ]
+  FieldName; 
+  
+  @UI.identification: [ {
+    position: 6
+  } ]
+  @UI.lineItem: [ {
+    position: 6
+  } ]
+  @EndUserText.label: 'Is Disable'
+  DisableField;
+  
+  @UI.identification: [ {
+    position: 7 
+  } ]
+  @UI.lineItem: [ {
+    position: 7 
+  } ]
+  @EndUserText.label: 'Is Required'
+  RequireField;
+}

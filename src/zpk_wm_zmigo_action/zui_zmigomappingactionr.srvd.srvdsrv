@@ -1,0 +1,5 @@
+@ObjectModel.leadingEntity.name: 'ZI_ZmigoMappingActionR_S'
+define service ZUI_ZMIGOMAPPINGACTIONR {
+  expose ZI_ZMIGOMAPPINGACTIONR_S as ZmigoMappingActiAll;
+  expose ZI_ZMIGOMAPPINGACTIONR as ZmigoMappingActionR;
+}

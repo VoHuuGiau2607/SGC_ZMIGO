@@ -1,0 +1,88 @@
+managed with additional save implementation in class ZBP_I_ZMIGOREQUIREDFIELD_S unique;
+strict;
+with draft;
+define behavior for ZI_ZmigoRequiredField_S alias ZmigoRequiredFieAll
+draft table ztb_wm_req__d_s
+with unmanaged save
+lock master total etag LastChangedAtMax
+authorization master ( global )
+{
+  field ( readonly )
+  SingletonID;
+
+  field ( features : instance )
+  TransportRequestID;
+
+  field ( notrigger )
+  SingletonID,
+  LastChangedAtMax;
+
+
+  update;
+  internal create;
+  internal delete;
+
+  draft action ( features : instance ) Edit with additional implementation;
+  draft action Activate optimized;
+  draft action Discard;
+  draft action Resume;
+  draft determine action Prepare;
+  action ( features : instance ) SelectCustomizingTransptReq parameter D_SelectCustomizingTransptReqP result [1] $self;
+
+  association _ZmigoRequiredField { create ( features : instance ); with draft; }
+
+  validation ValidateTransportRequest on save ##NOT_ASSIGNED_TO_DETACT { create; update; }
+
+  side effects
+  {
+    action SelectCustomizingTransptReq affects $self;
+  }
+
+}
+
+define behavior for ZI_ZmigoRequiredField alias ZmigoRequiredField ##UNMAPPED_FIELD
+persistent table ztb_wm_req_fld
+draft table ztb_wm_req_fl_d
+lock dependent by _ZmigoRequiredFieAll
+authorization dependent by _ZmigoRequiredFieAll
+{
+  field ( mandatory : create )
+  Reference,
+  Action,
+  Mtart,
+//  Bwart,
+  FieldName;
+
+  field ( readonly )
+  SingletonID;
+
+  field ( readonly : update )
+  Reference,
+  Action,
+  Mtart,
+  Bwart,
+  FieldName;
+
+  field ( notrigger )
+  SingletonID;
+
+
+  update ( features : global );
+  delete ( features : global );
+
+  mapping for ztb_wm_req_fld
+    {
+      Reference    = REFERENCE;
+      Action       = ACTION;
+      Mtart        = MTART;
+      Bwart        = BWART;
+      FieldName    = FIELD_NAME;
+      DisableField = DISABLE_FIELD;
+      RequireField = REQUIRE_FIELD;
+    }
+
+  association _ZmigoRequiredFieAll { with draft; }
+
+  validation ValidateTransportRequest on save ##NOT_ASSIGNED_TO_DETACT { create; update; delete; }
+
+}

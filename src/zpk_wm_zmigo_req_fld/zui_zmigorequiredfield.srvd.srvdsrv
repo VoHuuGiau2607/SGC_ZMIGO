@@ -1,0 +1,5 @@
+@ObjectModel.leadingEntity.name: 'ZI_ZmigoRequiredField_S'
+define service ZUI_ZMIGOREQUIREDFIELD {
+  expose ZI_ZMIGOREQUIREDFIELD_S as ZmigoRequiredFieAll;
+  expose ZI_ZMIGOREQUIREDFIELD as ZmigoRequiredField;
+}

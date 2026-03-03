@@ -1,0 +1,107 @@
+@Metadata.layer: #CORE
+annotate entity ZI_WM_ZMIGO_R04 with
+{
+  @UI.selectionField: [{ position: 1 }]
+  @UI.lineItem: [{ position: 1 }]
+  InboundDelivery;
+  @UI.lineItem: [{ position: 2 }]
+  InboundDeliveryItem;
+  @UI.lineItem: [{ position: 4 }]
+  Plant;
+  @UI.hidden: true
+  PlantName;
+  @UI.lineItem: [{ position: 6 }]
+  Supplier;
+  @UI.lineItem: [{ position: 7 }]
+  @EndUserText.label: 'Supplier Name'
+  SupplierName;
+  @UI.selectionField: [{ position: 5 }]
+  @UI.lineItem: [{ position: 8 }]
+  DeliveryDate;
+  @UI.lineItem: [{ position: 9 }]
+  Material;
+  @UI.lineItem: [{ position: 10 }]
+  @EndUserText.label: 'Material Description'
+  MaterialDescription;
+  @UI.lineItem: [{ position: 11 }]
+  @EndUserText.label: 'Material Type'
+  MaterialType;
+  @UI.hidden: true
+  MaterialTypeName;
+  @UI.lineItem: [{ position: 12 }]
+  DeliveryQuantityUnit;
+  @UI.hidden: true
+  UnitNumberOfDecimal;
+  @UI.lineItem: [{ position: 13 }]
+  ActualDeliveryQuantity;
+  @UI.lineItem: [{ position: 14 }]
+  BaseUnit;
+  @UI.lineItem: [{ position: 15 }]
+  ActualDeliveredQtyInBaseUnit;
+  @UI.lineItem: [{ position: 16 }]
+  Batch;
+  @UI.lineItem: [{ position: 17 }]
+  GoodsMovementType;
+  @UI.selectionField: [{ position: 4 }]
+  @UI.lineItem: [{ position: 5 }]
+  StorageLocation;
+  @UI.hidden: true
+  StorageLocationName;
+  @UI.lineItem: [{ position: 18 }]
+  ShipToParty;
+  @UI.lineItem: [{ position: 19 }]
+  ShipToPartyName;
+  //  @UI.lineItem: [{ position: 20 }]
+  //  @EndUserText.label: 'SD Document'
+  //  OriginSDDocument;
+  //  @UI.lineItem: [{ position: 21 }]
+  //  @EndUserText.label: 'SD Document Item'
+  //  SDDocumentItem;
+  @UI.lineItem: [{ position: 22 }]
+  InventorySpecialStockType;
+  @UI.lineItem: [{ position: 23 }]
+  @EndUserText.label: 'PO'
+  ReferenceSDDocument;
+  @UI.lineItem: [{ position: 24 }]
+  @EndUserText.label: 'PO Item'
+  ReferenceSDDocumentItem;
+  @UI.lineItem: [{ position: 25 }]
+  CostCenter;
+  @UI.lineItem: [{ position: 26 }]
+  GLAccount;  
+  @UI.selectionField: [{ position: 3 }]
+  @UI.lineItem: [{ position: 3 }]
+  CreationDate;
+  @UI.hidden: true
+  ProfitCenter;
+  @UI.hidden: true
+  ProfitCenterName;
+  @UI.lineItem: [{ position: 41 }] 
+  GrossWeight;
+  @UI.lineItem: [{ position: 42 }] 
+  QuantityGrossWeight;
+  @UI.lineItem: [{ position: 43 }] 
+  LotNum;
+  @UI.lineItem: [{ position: 44 }] 
+  BatchNote;
+  @UI.lineItem: [{ position: 45 }] 
+  ProductionDate;
+  @UI.lineItem: [{ position: 46 }] 
+  ExpirationDate;
+  @UI.lineItem: [{ position: 47 }] 
+  Origin;
+//  @UI.lineItem: [{ position: 48 }] 
+//  BatchSupplier;
+  @UI.lineItem: [{ position: 49 }] 
+  Manufacturer;
+  @UI.lineItem: [{ position: 50 }] 
+  ProductionDateInternal;
+  @UI.lineItem: [{ position: 51 }] 
+  ExpirationDateInternal;
+  @UI.lineItem: [{ position: 52 }] 
+  AccessCode;
+  @UI.lineItem: [{ position: 53 }] 
+  PackagingSpec;
+  @UI.lineItem: [{ position: 54 }] 
+  DiaChiGiaoHang;
+}

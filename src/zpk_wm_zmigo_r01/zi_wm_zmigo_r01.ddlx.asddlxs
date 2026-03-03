@@ -1,0 +1,98 @@
+@Metadata.layer: #CORE
+annotate entity ZI_WM_ZMIGO_R01 with
+{
+  @UI.selectionField: [{ position: 1 }]
+  @UI.lineItem: [{ position: 1 }]
+  PurchaseOrder;
+  @UI.lineItem: [{ position: 2 }]
+  PurchaseOrderItem;
+  @UI.hidden: true
+  PurchaseOrderScheduleLine;
+  @UI.hidden: true
+  ReservationItem;
+  @UI.hidden: true
+  RecordType;
+  @UI.hidden: true
+  AccountAssignmentNumber;
+  @UI.lineItem: [{ position: 3 }]
+  PurchaseOrderType;
+  @UI.lineItem: [{ position: 4 }]
+  Plant;
+  @UI.hidden: true
+  PlantName;
+  @UI.hidden: true
+  IsAllowEditStorageLocation;
+  @UI.selectionField: [{ position: 3 }]
+  @UI.lineItem: [{ position: 5 }]
+  StorageLocation;
+  @UI.hidden: true
+  //  @UI.lineItem: [{ position: 6 }]
+  StorageLocationName;
+  @UI.lineItem: [{ position: 7 }]
+  Material;
+  @UI.lineItem: [{ position: 8 }]
+  @EndUserText.label: 'Material Description'
+  MaterialDescription;
+  @UI.lineItem: [{ position: 9 }]
+  Batch;
+  @UI.lineItem: [{ position: 10 }]
+  UnitofMeasure;
+  @UI.lineItem: [{ position: 11 }]
+  Quantity;
+  @UI.lineItem: [{ position: 12 }]
+  PostedQuantity;
+  @UI.lineItem: [{ position: 13 }]
+  RemainingQuantity;
+  @UI.lineItem: [{ position: 14 }]
+  MaterialGroup;
+  @UI.hidden: true
+  IsAllowEditComponent;
+  @UI.lineItem: [{ position: 15 }]
+  @EndUserText.label: 'Component'
+  Component;
+  @UI.lineItem: [{ position: 16 }]
+  @EndUserText.label: 'Component Description'
+  ComponentName;
+  @UI.lineItem: [{ position: 17 }]
+  @EndUserText.label: 'Batch Component'
+  ComponentBatch;
+  @UI.lineItem: [{ position: 18 }]
+  @EndUserText.label: 'Số Lot Component'
+  ComponentLotNum;
+  @UI.lineItem: [{ position: 19 }]
+  @EndUserText.label: 'UoM Component'
+  ComponentUoM;
+  @UI.hidden: true
+  ComponentUnitNumberOfDecimal;
+  @UI.lineItem: [{ position: 20 }]
+  @EndUserText.label: 'Quantity Component'
+  ComponentQuantity;
+  @UI.lineItem: [{ position: 30 }]
+  Supplier;
+  @UI.lineItem: [{ position: 31 }]
+  @EndUserText.label: 'Supplier Name'
+  SupplierFullName;
+  @UI.lineItem: [{ position: 32 }]
+  AccountAssignmentCategory;
+  @UI.lineItem: [{ position: 33 }]
+  @EndUserText.label: 'Asset'
+  Asset;
+  @UI.lineItem: [{ position: 34 }]
+  @EndUserText.label: 'Cost Center'
+  CostCenter;
+  @UI.lineItem: [{ position: 35 }]
+  @EndUserText.label: 'G/L Account'
+  GLAccount;
+  @UI.lineItem: [{ position: 36 }]
+  @EndUserText.label: 'WBS Element'
+  WBSElementExternal;
+  @UI.lineItem: [{ position: 48 }]
+  @EndUserText.label: 'Header Text'
+  HeaderText;
+  @UI.lineItem: [{ position: 49 }]
+  @EndUserText.label: 'Người mua hàng'
+  NguoiMuaHang;
+  @UI.selectionField: [{ position: 2 }]
+  @UI.lineItem: [{ position: 50 }]
+  CreationDate;
+}

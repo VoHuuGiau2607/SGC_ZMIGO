@@ -1,0 +1,41 @@
+{
+  "formatVersion": "1",
+  "header": {
+    "description": "Khai báo thông tin hiển thị Gross Weight",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "serviceConfiguration": {
+    "serviceBinding": "ZUI_KHAIBOTHNGTINHINTHG_O4",
+    "serviceName": "ZUI_KHAIBOTHNGTINHINTHG_O4",
+    "serviceVersion": "0001",
+    "rootEntitySet": "KhaiBOThNgTinHiNAll",
+    "name": "ZMIGO - Khai báo thông tin hiển thị Gross Weight",
+    "transportObject": "",
+    "configurationGroup": "",
+    "skipRootEntity": true,
+    "enableFileUpload": false
+  },
+  "appConfiguration": {
+    "listReport": {},
+    "objectPages": [
+      {
+        "entitySet": "KhaiBOThNgTinHiNAll",
+        "variantManagement": "control",
+        "showTransportSelectionStrip": true
+      }
+    ],
+    "tableSettings": [
+      {
+        "entitySet": "KhaiBOThNgTinHiNThG",
+        "tableType": "gridTable",
+        "selectAll": true,
+        "rowCountMode": "auto",
+        "frozenColumnCount": 6,
+        "creationModeName": "inlineCreationRows",
+        "createAtEnd": true,
+        "widthIncludingColumnHeader": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_SIA6" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <SIA6>
+    <MAIN_OBJECT>
+     <NAME>ZIAM_WM_ZMIGO_R02_EXCL_313_EXT</NAME>
+     <TYPE>SIA6</TYPE>
+     <DESCRIPTION>Exclude Mat.doc 313</DESCRIPTION>
+     <RESPONSIBLE>CB9980000010</RESPONSIBLE>
+     <MASTER_LANGUAGE>EN</MASTER_LANGUAGE>
+     <MASTER_SYSTEM>T57</MASTER_SYSTEM>
+     <PACKAGE_REF>
+      <PACKAGE_NAME>ZPK_WM_ZMIGO_R02_EXCL_313</PACKAGE_NAME>
+     </PACKAGE_REF>
+     <ABAP_LANGU_VERSION>5</ABAP_LANGU_VERSION>
+    </MAIN_OBJECT>
+    <APP_ID>ZIAM_WM_ZMIGO_R02_EXCL_313_EXT</APP_ID>
+    <APP_TYPE>EXT</APP_TYPE>
+    <ABAP_LANGUAGE_VERSION>5</ABAP_LANGUAGE_VERSION>
+    <UI_APP_ID>ZMIGO_R02_E313_UI5R</UI_APP_ID>
+    <SERVICE>
+     <item>
+      <REL_NAME>ZUI_TBWM_ZMIGO_313_O4</REL_NAME>
+      <REL_TYPE>G4BA</REL_TYPE>
+      <APP_ID>ZIAM_WM_ZMIGO_R02_EXCL_313_EXT</APP_ID>
+      <SRVC_NAME>8438F889E13F15C7831A0ADB37DD79</SRVC_NAME>
+      <SRVC_TYPE>HT</SRVC_TYPE>
+      <UIAD_SRC>ZMIGO_R02_E313_UI5R</UIAD_SRC>
+      <TEXT>Service Binding for ZUI_TBWM_ZMIGO_313_O4</TEXT>
+      <TYPE_TEXT>OData V4</TYPE_TEXT>
+     </item>
+    </SERVICE>
+    <PUBLISH_STATUS>p</PUBLISH_STATUS>
+   </SIA6>
+  </asx:values>
+ </asx:abap>
+</abapGit>

@@ -1,0 +1,93 @@
+@Metadata.layer: #CORE
+annotate entity ZI_WM_ZMIGO_R05 with
+{
+  @UI.selectionField: [{ position: 1 }]
+  @UI.lineItem: [{ position: 1 }]
+  OutboundDelivery;
+  @UI.lineItem: [{ position: 2 }]
+  OutboundDeliveryItem;
+  @UI.hidden: true
+  NotAllowEditBatch;
+  @UI.lineItem: [{ position: 4 }]
+  Plant;
+  @UI.hidden: true
+  PlantName;
+  @UI.lineItem: [{ position: 6 }]
+  SoldToParty;
+  @UI.lineItem: [{ position: 7 }]
+  @EndUserText.label: 'Sold To Party Name'
+  SoldToPartyName;
+  @UI.lineItem: [{ position: 8 }]
+  ShipToParty;
+  @UI.lineItem: [{ position: 9 }]
+  @EndUserText.label: 'Ship To Party Name'
+  ShipToPartyName;
+  @UI.lineItem: [{ position: 10 }]
+  PlannedGoodsIssueDate;
+  @UI.lineItem: [{ position: 11 }]
+  Material;
+  @UI.lineItem: [{ position: 12 }]
+  @EndUserText.label: 'Material Description'
+  MaterialDescription;
+  @UI.lineItem: [{ position: 13 }]
+  @EndUserText.label: 'Material Type'
+  MaterialType;
+  @UI.hidden: true
+  MaterialTypeName;
+  @UI.lineItem: [{ position: 14 }]
+  DeliveryQuantityUnit;
+  @UI.hidden: true
+  UnitNumberOfDecimal;
+  @UI.lineItem: [{ position: 15 }]
+  ActualDeliveryQuantity;
+  @UI.lineItem: [{ position: 16 }]
+  BaseUnit;
+  @UI.lineItem: [{ position: 17 }]
+  UnrestrictedUse;
+  @UI.lineItem: [{ position: 18 }]
+  ActualDeliveredQtyInBaseUnit;
+  @UI.lineItem: [{ position: 19 }]
+  DeliveryDate;
+  @UI.lineItem: [{ position: 20 }]
+  Batch; 
+  @UI.lineItem: [{ position: 21 }]
+  @EndUserText.label: 'SD Document'
+  ReferenceSDDocument;
+  @UI.lineItem: [{ position: 22 }]
+  @EndUserText.label: 'SD Item'
+  ReferenceSDDocumentItem;
+  @UI.lineItem: [{ position: 23 }]
+  GoodsMovementType;
+  @UI.selectionField: [{ position: 4 }]
+  @UI.lineItem: [{ position: 5 }]
+  StorageLocation;
+  @UI.hidden: true
+  StorageLocationName;
+  @UI.lineItem: [{ position: 24 }]
+  InventorySpecialStockType;
+  @UI.lineItem: [{ position: 27 }]
+  CostCenter;
+  @UI.lineItem: [{ position: 28 }]
+  GLAccount;
+  @UI.lineItem: [{ position: 29 }]
+  @EndUserText.label: 'Số Lot'
+  LotNum;
+  @UI.lineItem: [{ position: 30 }]
+  @EndUserText.label: 'Gross Weight'
+  GrossWeight;
+  @UI.lineItem: [{ position: 31 }]
+  @EndUserText.label: 'Quantity Gross Weight'
+  QuantityGrossWeight;
+  @UI.selectionField: [{ position: 3 }]
+  @UI.lineItem: [{ position: 32 }]
+  CreationDate;
+  @UI.lineItem: [{ position: 60 }]
+  @EndUserText.label: 'Ghi chú lô'
+  BatchNote;
+  @UI.lineItem: [{ position: 61 }]
+  @EndUserText.label: 'Ghi chú Phòng kế hoạch'
+  PlanDeptNote;
+  @UI.lineItem: [{ position: 70 }]
+  @EndUserText.label: 'Customer Reference'
+  PurchaseOrderByCustomer;
+}

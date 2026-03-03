@@ -1,0 +1,5 @@
+@ObjectModel.leadingEntity.name: 'ZI_KhaiBOMaterialTypeG_S'
+define service ZUI_KHAIBOMATERIALTYPEG {
+  expose ZI_KHAIBOMATERIALTYPEG_S as KhaiBOMaterialTyAll;
+  expose ZI_KHAIBOMATERIALTYPEG as KhaiBOMaterialTypeG;
+}

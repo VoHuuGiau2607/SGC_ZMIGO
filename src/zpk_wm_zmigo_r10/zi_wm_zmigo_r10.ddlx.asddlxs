@@ -1,0 +1,164 @@
+@Metadata.layer: #CORE
+annotate entity ZI_WM_ZMIGO_R10 with
+{
+  @UI.lineItem: [{criticality: 'WarningCriticality', position: 1}]
+  @EndUserText.label: 'Cảnh báo HSD'
+  Warning;
+  @UI.hidden: true
+  WarningCriticality;
+  @UI.hidden: true
+  ExpirationDateRemaining;
+  @UI.lineItem: [{ position: 2 }]
+  @EndUserText.label: '% HSD'
+  ExpirationDateRemainingPerc;
+  @UI.lineItem: [{ position: 3 }]
+  Plant;
+  @UI.hidden: true
+  PlantName;
+  @UI.selectionField: [{ position: 4 }]
+  @UI.lineItem: [{ position: 4 }]
+  StorageLocation;
+  @UI.hidden: true
+  StorageLocationName;
+  @UI.selectionField: [{ position: 1 }]
+  @UI.lineItem: [{ position: 5 }]
+  @EndUserText.label: 'Material'
+  Material;
+  @UI.lineItem: [{ position: 6 }]
+  @EndUserText.label: 'Material Description'
+  MaterialDescription;
+  @UI.lineItem: [{ position: 7 }]
+  @EndUserText.label: 'Batch'
+  Batch;
+  @UI.lineItem: [{ position: 8 }]
+  InventorySpecialStockType;
+  @UI.lineItem: [{ position: 9 }]
+  SalesOrder;
+  @UI.lineItem: [{ position: 10 }]
+  SalesOrderItem;
+  @UI.lineItem: [{ position: 11 }]
+  MaterialType;
+  @UI.hidden: true
+  MaterialTypeName;
+  @UI.lineItem: [{ position: 12 }]
+  @EndUserText.label: 'Base Unit'
+  MaterialBaseUnit;
+  @UI.lineItem: [{ position: 13 }]
+  @EndUserText.label: 'Unrestricted Use'
+  UnrestrictedUse;
+  @UI.lineItem: [{ position: 14 }]
+  @EndUserText.label: 'Block Stock'
+  BlockStock;
+  @UI.lineItem: [{ position: 15 }]
+  @EndUserText.label: 'Transitand Tranfer'
+  TransitandTranfer;
+  @UI.lineItem: [{ position: 16 }]
+  @EndUserText.label: 'Quality Inspection'
+  QualityInspection;
+  @UI.lineItem: [{ position: 17 }]
+  PurchaseOrderByCustomer;
+  @UI.lineItem: [{ position: 18 }]
+  SoldToParty;
+  @UI.lineItem: [{ position: 19 }]
+  @EndUserText.label: 'Sold To Party Name'
+  SoldToPartyName;
+  @UI.lineItem: [{ position: 20 }]
+  ShipToParty;
+  @UI.lineItem: [{ position: 21 }]
+  @EndUserText.label: 'Ship To Party Name'
+  ShipToPartyName;
+  @UI.lineItem: [{ position: 22 }]
+  @EndUserText.label: 'Số lot'
+  LotNum;
+  @UI.hidden: true
+  LotNumActive;
+  @UI.lineItem: [{ position: 23 }]
+  @EndUserText.label: 'Ghi chú lô'
+  BatchNote;
+  @UI.hidden: true
+  BatchNoteActive;
+  @UI.lineItem: [{ position: 24 }]
+  @EndUserText.label: 'Ngày sản xuất'
+  ProductionDate;
+  @UI.hidden: true
+  ProductionDateActive;
+  @UI.lineItem: [{ position: 25 }]
+  @EndUserText.label: 'Hạn sử dụng'
+  ExpirationDate;
+  @UI.hidden: true
+  ExpirationDateActive;
+  @UI.lineItem: [{ position: 26 }]
+  @EndUserText.label: 'Nguồn gốc'
+  Origin;
+  @UI.hidden: true
+  OriginActive;
+  @UI.lineItem: [{ position: 27 }]
+  @EndUserText.label: 'Ngày nhập kho'
+  GoodsReceiptDate;
+  @UI.lineItem: [{ position: 28 }]
+  @EndUserText.label: 'Nhà cung cấp'
+  BatchSupplier;
+  @UI.hidden: true
+  BatchSupplierActive;
+  @UI.lineItem: [{ position: 29 }]
+  @EndUserText.label: 'Nhà sản xuất'
+  Manufacturer;
+  @UI.hidden: true
+  ManufacturerActive;
+  @UI.lineItem: [{ position: 30 }]
+  @EndUserText.label: 'Ngày sản xuất nội bộ'
+  ProductionDateInternal;
+  @UI.hidden: true
+  ProductionDateInternalActive;
+  @UI.lineItem: [{ position: 31 }]
+  @EndUserText.label: 'Hạn sử dụng nội bộ'
+  ExpirationDateInternal;
+  @UI.hidden: true
+  ExpirationDateInternalActive;
+  @UI.lineItem: [{ position: 32 }]
+  @EndUserText.label: 'Mã truy xuất'
+  AccessCode;
+  @UI.hidden: true
+  AccessCodeActive;
+  @UI.lineItem: [{ position: 33 }]
+  @EndUserText.label: 'Quy cách bao gói'
+  PackagingSpec;
+  @UI.hidden: true
+  PackagingSpecActive;
+  @UI.lineItem: [{ position: 34 }]
+  @EndUserText.label: 'Profit Center'
+  ProfitCenter;
+  @UI.hidden: true
+  ProfitCenterActive;
+  @UI.lineItem: [{ position: 35 }]
+  @EndUserText.label: 'Nơi hiệu chuẩn'
+  CalibrationLocation;
+  @UI.lineItem: [{ position: 36 }]
+  @EndUserText.label: 'Nơi sử dụng'
+  WhereToUse;
+  @UI.lineItem: [{ position: 37 }]
+  @EndUserText.label: 'Gross Weight'
+  GrossWeight;
+  @UI.hidden: true
+  GrossWeightActive;
+  @UI.lineItem: [{ position: 39 }]
+  @EndUserText.label: 'Unrestricted Use Gross Weight'
+  UnrestrictedUseTHU;
+  @UI.lineItem: [{ position: 40 }]
+  @EndUserText.label: 'Block Stock Gross Weight'
+  BlockStockTHU;
+  @UI.lineItem: [{ position: 41 }]
+  @EndUserText.label: 'Transitand Tranfer Gross Weight'
+  TransitandTranferTHU;
+  @UI.lineItem: [{ position: 42 }]
+  @EndUserText.label: 'Quality Inspection Gross Weight'
+  QualityInspectionTHU;
+  @UI.lineItem: [{ position: 43 }]
+  @EndUserText.label: 'NCC Gia công'
+  OutsourcingSupplier;
+  @UI.lineItem: [{ position: 44 }]
+  @EndUserText.label: 'Ghi chú QC'
+  QCNote;
+  @UI.hidden: true
+  QCNoteActive;
+}

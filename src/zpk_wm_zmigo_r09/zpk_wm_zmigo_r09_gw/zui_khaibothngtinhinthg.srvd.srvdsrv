@@ -1,0 +1,5 @@
+@ObjectModel.leadingEntity.name: 'ZI_KhaiBOThNgTinHiNThG_S'
+define service ZUI_KHAIBOTHNGTINHINTHG {
+  expose ZI_KHAIBOTHNGTINHINTHG_S as KhaiBOThNgTinHiNAll;
+  expose ZI_KHAIBOTHNGTINHINTHG as KhaiBOThNgTinHiNThG;
+}

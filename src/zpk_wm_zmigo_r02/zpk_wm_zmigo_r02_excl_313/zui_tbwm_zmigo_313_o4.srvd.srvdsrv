@@ -1,0 +1,11 @@
+@EndUserText: {
+  label: 'Service Definition for ZC_TBWM_ZMIGO_313'
+}
+@ObjectModel: {
+  leadingEntity: {
+    name: 'ZC_TBWM_ZMIGO_313'
+  }
+}
+define service ZUI_TBWM_ZMIGO_313_O4 provider contracts odata_v4_ui {
+  expose ZC_TBWM_ZMIGO_313;
+}

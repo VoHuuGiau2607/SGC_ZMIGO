@@ -1,0 +1,41 @@
+{
+  "formatVersion": "1",
+  "header": {
+    "description": "Khai báo Mat.Type giữ nguyên PC khi chuyển kho",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "serviceConfiguration": {
+    "serviceBinding": "ZUI_KHAIBOMATERIALTYPEG_O4",
+    "serviceName": "ZUI_KHAIBOMATERIALTYPEG_O4",
+    "serviceVersion": "0001",
+    "rootEntitySet": "KhaiBOMaterialTyAll",
+    "name": "ZMIGO - Khai báo Mat.Type giữ nguyên PC khi c.kho",
+    "transportObject": "",
+    "configurationGroup": "",
+    "skipRootEntity": true,
+    "enableFileUpload": false
+  },
+  "appConfiguration": {
+    "listReport": {},
+    "objectPages": [
+      {
+        "entitySet": "KhaiBOMaterialTyAll",
+        "variantManagement": "control",
+        "showTransportSelectionStrip": true
+      }
+    ],
+    "tableSettings": [
+      {
+        "entitySet": "KhaiBOMaterialTypeG",
+        "tableType": "gridTable",
+        "selectAll": true,
+        "rowCountMode": "auto",
+        "frozenColumnCount": 1,
+        "creationModeName": "inlineCreationRows",
+        "createAtEnd": true,
+        "widthIncludingColumnHeader": true
+      }
+    ]
+  }
+}

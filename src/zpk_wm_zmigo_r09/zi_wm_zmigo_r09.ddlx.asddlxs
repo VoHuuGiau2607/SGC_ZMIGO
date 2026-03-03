@@ -1,0 +1,203 @@
+@Metadata.layer: #CORE
+annotate entity ZI_WM_ZMIGO_R09 with
+{
+  @UI.selectionField: [{ position: 1 }]
+  @UI.lineItem: [{ position: 1 }]
+  Reservation;
+  @UI.lineItem: [{ position: 2 }]
+  ReservationItem;
+  @UI.hidden: true
+  RecordType;
+  @UI.lineItem: [{ position: 4 }]
+  Plant;
+  @UI.hidden: true
+  PlantName;
+  @UI.selectionField: [{ position: 3 }]
+  @UI.lineItem: [{ position: 5 }]
+  StorageLocation;
+  @UI.hidden: true
+  StorageLocationName;
+  @UI.lineItem: [{ position: 6 }]
+  Material;
+  @UI.lineItem: [{ position: 7 }]
+  MaterialDescription;
+  @UI.lineItem: [{ position: 8 }]
+  BaseUnit;
+  @UI.lineItem: [{ position: 9 }]
+  Batch;
+  @UI.lineItem: [{ position: 10 }]
+  GoodsMovementType;
+  @UI.lineItem: [{ position: 11 }]
+  @EndUserText.label: 'Quantity'
+  Quantity;
+  @UI.lineItem: [{ position: 12 }]
+  @EndUserText.label: 'Unrestricted Use'
+  UnrestrictedUse;
+  @UI.lineItem: [{ position: 13 }]
+  @EndUserText.label: 'Số Lot'
+  LotNum;
+  @UI.hidden: true
+  ShowGrossWeight;
+  @UI.hidden: true
+  IsAllowEditGrossWeight;
+  @UI.lineItem: [{ position: 14 }]
+  @EndUserText.label: 'Gross Weight'
+  GrossWeight;
+  @UI.lineItem: [{ position: 15 }]
+  @EndUserText.label: 'Receiving Plant'
+  IssuingOrReceivingPlant;
+  @UI.hidden: true
+  IssuingOrReceivingPlantName;
+  @UI.lineItem: [{ position: 16 }]
+  @EndUserText.label: 'Receiving Storage Location'
+  IssuingOrReceivingSLoc;
+  @UI.hidden: true
+  IssuingOrReceivingSLocName;
+  @UI.lineItem: [{ position: 17 }]
+  SalesOrder;
+  @UI.lineItem: [{ position: 18 }]
+  SalesOrderItem;
+  @UI.lineItem: [{ position: 19 }]
+  @EndUserText.label: 'External Amount'
+  AmountLC;
+  @UI.lineItem: [{ position: 20 }]
+  InventorySpecialStockType;
+  @UI.lineItem: [{ position: 21 }]
+  WBSElementExternalID;
+  @UI.lineItem: [{ position: 22 }]
+  @EndUserText.label: 'Lệnh sản xuất'
+  OrderNumber;
+  //  @UI.hidden: true
+  //  WBSElementExternalID;
+  @UI.hidden: true
+  IsWarehouseManagement;
+  @UI.hidden: true
+  WarehouseNumber;
+  @UI.hidden: true
+  HandlingUnitNumber;
+  @UI.hidden: true
+  ParentHandlingUnitUUID;
+  @UI.hidden: true
+  StockItemUUID;
+  @UI.hidden: true
+  StorageBin;
+  @UI.lineItem: [{ position: 30 }]
+  @EndUserText.label: 'NCC gia công'
+  NCCGiaCong;
+  @UI.lineItem: [{ position: 31 }]
+  @EndUserText.label: 'Rec.SD Document'
+  IssgOrRcvgSalesOrder;
+  @UI.lineItem: [{ position: 32 }]
+  @EndUserText.label: 'Rec.SD Item'
+  IssgOrRcvgSalesOrderItem;
+  @UI.lineItem: [{ position: 33 }]
+  @EndUserText.label: 'Rec.Material'
+  IssgOrRcvgMaterial;
+  @UI.lineItem: [{ position: 34 }]
+  @EndUserText.label: 'Rec.Batch'
+  IssgOrRcvgBatch;
+  @UI.lineItem: [{ position: 35 }]
+  CostCenter;
+  @UI.lineItem: [{ position: 36 }]
+  CostCenterName;
+  @UI.lineItem: [{ position: 37 }]
+  GLAccount;
+  @UI.lineItem: [{ position: 38 }]
+  Note;
+  @UI.lineItem: [{ position: 39 }]
+  ProductType;
+  @UI.hidden: true
+  ProductTypeName;
+  @UI.selectionField: [{ position: 2 }]
+  @UI.lineItem: [{ position: 50 }]
+  CreationDate;
+  @UI.hidden: true
+  ReservationDate;
+  //  @UI.lineItem: [{ position: 60 }]
+  //  @EndUserText.label: 'Ghi chú lô'
+  //  BatchNote;
+
+
+  //  @UI.lineItem: [{ position: 22 }]
+  //  @EndUserText.label: 'Số lot'
+  //  LotNum;
+  @UI.hidden: true
+  LotNumActive;
+  @UI.lineItem: [{ position: 70 }]
+  @EndUserText.label: 'Ghi chú lô'
+  BatchNote;
+  @UI.hidden: true
+  BatchNoteActive;
+  @UI.lineItem: [{ position: 71 }]
+  @EndUserText.label: 'Ngày sản xuất'
+  ProductionDate;
+  @UI.hidden: true
+  ProductionDateActive;
+  @UI.lineItem: [{ position: 72 }]
+  @EndUserText.label: 'Hạn sử dụng'
+  ExpirationDate;
+  @UI.hidden: true
+  ExpirationDateActive;
+  @UI.lineItem: [{ position: 73 }]
+  @EndUserText.label: 'Nguồn gốc'
+  Origin;
+  @UI.hidden: true
+  OriginActive;
+  @UI.lineItem: [{ position: 74 }]
+  @EndUserText.label: 'Ngày nhập kho'
+  GoodsReceiptDate;
+  @UI.lineItem: [{ position: 75 }]
+  @EndUserText.label: 'Nhà cung cấp'
+  BatchSupplier;
+  @UI.hidden: true
+  BatchSupplierActive;
+  @UI.lineItem: [{ position: 76 }]
+  @EndUserText.label: 'Nhà sản xuất'
+  Manufacturer;
+  @UI.hidden: true
+  ManufacturerActive;
+  @UI.lineItem: [{ position: 77 }]
+  @EndUserText.label: 'Ngày sản xuất nội bộ'
+  ProductionDateInternal;
+  @UI.hidden: true
+  ProductionDateInternalActive;
+  @UI.lineItem: [{ position: 78 }]
+  @EndUserText.label: 'Hạn sử dụng nội bộ'
+  ExpirationDateInternal;
+  @UI.hidden: true
+  ExpirationDateInternalActive;
+  @UI.lineItem: [{ position: 79 }]
+  @EndUserText.label: 'Mã truy xuất'
+  AccessCode;
+  @UI.hidden: true
+  AccessCodeActive;
+  @UI.lineItem: [{ position: 80 }]
+  @EndUserText.label: 'Quy cách bao gói'
+  PackagingSpec;
+  @UI.hidden: true
+  PackagingSpecActive;
+  @UI.lineItem: [{ position: 81 }]
+  @EndUserText.label: 'Profit Center'
+  ProfitCenter;
+  @UI.hidden: true
+  ProfitCenterActive;
+  @UI.lineItem: [{ position: 82 }]
+  @EndUserText.label: 'Nơi hiệu chuẩn'
+  CalibrationLocation;
+  @UI.lineItem: [{ position: 83 }]
+  @EndUserText.label: 'Nơi sử dụng'
+  WhereToUse;
+  //  @UI.lineItem: [{ position: 37 }]
+  //  @EndUserText.label: 'Gross Weight'
+  //  GrossWeight;
+  @UI.hidden: true
+  GrossWeightActive;
+  @UI.lineItem: [{ position: 84 }]
+  @EndUserText.label: 'Ghi chú QC'
+  QCNote;
+  @UI.hidden: true
+  QCNoteActive;
+  @UI.lineItem: [{ position: 85 }]
+  @EndUserText.label: 'Ghi chú Phòng kế hoạch'
+  PlanDeptNote;
+}

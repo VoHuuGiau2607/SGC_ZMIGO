@@ -1,0 +1,38 @@
+@Metadata.layer: #CUSTOMER
+@UI: {
+  headerInfo: {
+    typeName: 'KhaiBOMaterialTypeG', 
+    typeNamePlural: 'KhaiBOMaterialTypeGs', 
+    title: {
+      type: #STANDARD, 
+      label: 'Khai báo Material Type giữ nguyên PC khi', 
+      value: 'Mtart'
+    }
+  }
+}
+annotate view ZI_KhaiBOMaterialTypeG with
+{
+  @UI.identification: [ {
+    position: 1 
+  } ]
+  @UI.lineItem: [ {
+    position: 1 
+  } ]
+  @UI.facet: [ {
+    id: 'ZI_KhaiBOMaterialTypeG', 
+    purpose: #STANDARD, 
+    type: #IDENTIFICATION_REFERENCE, 
+    label: 'Khai báo Material Type giữ nguyên PC khi', 
+    position: 1 
+  } ]
+  Mtart;
+  
+  @UI.identification: [ {
+    position: 2 
+  } ]
+  @UI.lineItem: [ {
+    position: 2 
+  } ]
+  @EndUserText.label: 'Giữ nguyên PC'
+  IsKeepPc;
+}

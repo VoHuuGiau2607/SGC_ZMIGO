@@ -1,0 +1,144 @@
+@Metadata.layer: #CORE
+annotate entity ZI_WM_ZMIGO_R08 with
+{
+  @UI.selectionField: [{ position: 1 }]
+  @UI.lineItem: [{ position: 1 }]
+  ManufacturingOrder;
+  @UI.lineItem: [{ position: 2 }]
+  ManufacturingOrderItem;
+  @UI.hidden: true
+  ReservationItem;
+  @UI.lineItem: [{ position: 4 }]
+  @EndUserText.label: 'Plant'
+  Plant;
+  @UI.hidden: true
+  PlantName;
+  @UI.lineItem: [{ position: 5 }]
+  SoldToParty;
+  @UI.lineItem: [{ position: 6 }]
+  @EndUserText.label: 'Sold To Party Name'
+  SoldToPartyName;
+  @UI.lineItem: [{ position: 7 }]
+  ShipToParty;
+  @UI.lineItem: [{ position: 8 }]
+  @EndUserText.label: 'Ship To Party Name'
+  ShipToPartyName;
+  @UI.lineItem: [{ position: 9 }]
+  @EndUserText.label: 'Start Date'
+  MfgOrderScheduledStartDate;
+  @UI.lineItem: [{ position: 10 }]
+  @EndUserText.label: 'End Date'
+  MfgOrderPlannedEndDate;
+  @UI.lineItem: [{ position: 11 }]
+  Material;
+  @UI.lineItem: [{ position: 12 }]
+  @EndUserText.label: 'Material Description'
+  MaterialDescription;
+  @UI.lineItem: [{ position: 13 }]
+  @EndUserText.label: 'Material Type'
+  MaterialType;
+  @UI.hidden: true
+  MaterialTypeName;
+  @UI.lineItem: [{ position: 14 }] 
+  @EndUserText.label: 'Target Quantity'
+  TargetQuantity;
+  @UI.lineItem: [{ position: 15 }]
+  ProductionVersion;
+  @UI.lineItem: [{ position: 16 }]
+  @EndUserText.label: 'Goods Receipt/Issue Qty'
+  GoodsReceiptQty;
+  @UI.lineItem: [{ position: 17 }]
+  @EndUserText.label: 'Remaining Quantity'
+  RemainingQuantity;
+  @UI.lineItem: [{ position: 18 }]
+  ProductionUnit;
+  @UI.lineItem: [{ position: 19 }]
+  Batch;
+  @UI.selectionField: [{ position: 4 }]
+  @UI.lineItem: [{ position: 5 }]
+  StorageLocation;
+  @UI.hidden: true
+  StorageLocationName;
+  @UI.lineItem: [{ position: 20 }]
+  SalesOrder;
+  @UI.lineItem: [{ position: 21 }]
+  SalesOrderItem;
+  @UI.lineItem: [{ position: 22 }]
+  GoodsMovementType;
+//  @UI.lineItem: [{ position: 23 }]
+//  @EndUserText.label: 'WBS Element'
+//  WBSElementInternalID;
+  @UI.lineItem: [{ position: 24 }]
+  PurchaseOrderByCustomer;
+  @UI.lineItem: [{ position: 25 }]
+  @EndUserText.label: 'Số Lot'
+  LotNum;
+  @UI.lineItem: [{ position: 26 }]
+  LongText;
+  @UI.lineItem: [{ position: 27 }]
+  ProfitCenter;
+  @UI.lineItem: [{ position: 28 }]
+  BaseUnit;
+  @UI.lineItem: [{ position: 29 }]
+  @EndUserText.label: 'Is Completely Delivered'
+  IsCompletelyDelivered;
+  @UI.selectionField: [{ position: 3 }]
+  @UI.lineItem: [{ position: 3 }]
+  @EndUserText.label: 'Creation Date'
+  CreationDate;
+  
+  @UI.lineItem: [{ position: 50 }]
+  @EndUserText.label: 'Ghi chú lô'
+  BatchNote; 
+  @UI.lineItem: [{ position: 51 }]
+  @EndUserText.label: 'Ngày sản xuất'
+  ProductionDate; 
+  @UI.lineItem: [{ position: 52 }]
+  @EndUserText.label: 'Hạn sử dụng'
+  ExpirationDate; 
+  @UI.lineItem: [{ position: 53 }]
+  @EndUserText.label: 'Nguồn gốc'
+  Origin; 
+  @UI.lineItem: [{ position: 54 }]
+  @EndUserText.label: 'Ngày nhập kho'
+  GoodsReceiptDate;
+  @UI.lineItem: [{ position: 55 }]
+  @EndUserText.label: 'Nhà cung cấp'
+  BatchSupplier; 
+  @UI.lineItem: [{ position: 56 }]
+  @EndUserText.label: 'Nhà sản xuất'
+  Manufacturer; 
+  @UI.lineItem: [{ position: 57 }]
+  @EndUserText.label: 'Ngày sản xuất nội bộ'
+  ProductionDateInternal; 
+  @UI.lineItem: [{ position: 58 }]
+  @EndUserText.label: 'Hạn sử dụng nội bộ'
+  ExpirationDateInternal; 
+  @UI.lineItem: [{ position: 59 }]
+  @EndUserText.label: 'Mã truy xuất'
+  AccessCode; 
+  @UI.lineItem: [{ position: 60 }]
+  @EndUserText.label: 'Quy cách bao gói'
+  PackagingSpec;  
+  @UI.lineItem: [{ position: 61 }]
+  @EndUserText.label: 'Nơi hiệu chuẩn'
+  CalibrationLocation;
+  @UI.lineItem: [{ position: 62 }]
+  @EndUserText.label: 'Nơi sử dụng'
+  WhereToUse;
+  @UI.lineItem: [{ position: 63 }]
+  @EndUserText.label: 'Gross Weight'
+  GrossWeight;
+  @UI.lineItem: [{ position: 64 }]
+  @EndUserText.label: 'Ghi chú QC'
+  QCNote;
+  @UI.lineItem: [{ position: 65 }]
+  @EndUserText.label: 'Lượng BTP kì trước'
+  QuantityBTP;
+  @UI.lineItem: [{ position: 66 }]
+  @EndUserText.label: 'Lượng TP từ BTP kì trước'
+  QuantityTP;
+  @UI.lineItem: [{ position: 67 }]
+  @EndUserText.label: 'Ghi chú Phòng kế hoạch'
+  PlanDeptNote;
+}

@@ -1,0 +1,6 @@
+@EndUserText.label: 'ZC_TBWM_ZMIGO_313'
+@MappingRole: true
+define role ZC_TBWM_ZMIGO_313 {
+  grant select on ZC_TBWM_ZMIGO_313
+  where INHERITING CONDITIONS FROM ENTITY ZR_TBWM_ZMIGO_313 REPLACING { ROOT WITH _BaseEntity };
+}

@@ -1,0 +1,23 @@
+@EndUserText.label: 'Post Goods Movements'
+define service ZUI_WM_ZMIGO {
+  expose ZI_WM_ZMIGO_FILTER;
+  expose ZI_WM_ZMIGO_SLOC_WM;
+  expose ZI_WM_ZMIGO_UNIT_VH;
+  expose ZI_EWM_PHYSSTOCKPROD_VH;
+  expose ZI_WM_ZMIGO_BATCH_GW_CVH;
+  expose ZI_WM_BATCH_DETERMINATION;
+  expose ZI_WM_PRODUCT_CHARACTERISTIC;
+  expose ZI_WM_ZMIGO_MVT;
+  expose ZI_WM_ZMIGO_R01;
+  expose ZI_WM_ZMIGO_R02;
+  expose ZI_WM_ZMIGO_R04;
+  expose ZI_WM_ZMIGO_R05;
+  expose ZI_WM_ZMIGO_R08;
+  expose ZI_WM_ZMIGO_R09;
+  expose ZI_WM_ZMIGO_R10;
+  expose ZI_WM_ZMIGO_R10_FIELD;
+  expose ZI_WM_ZMIGO_R10_FIELD_ACTIVE;
+  expose ZI_WM_ZMIGO_COSTCENTER_CVH;
+  expose ZI_WM_ZMIGO_GLACCOUNT_CVH;
+  expose ZI_WM_ZMIGO_MVT_REASON_VH;
+}

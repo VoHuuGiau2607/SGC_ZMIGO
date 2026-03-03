@@ -1,0 +1,84 @@
+@Metadata.layer: #CORE
+annotate entity ZI_WM_ZMIGO_R02 with
+{
+  @UI.selectionField: [{ position: 2 }]
+  @UI.lineItem: [{ position: 2 }]
+  MaterialDocumentYear;
+  @UI.selectionField: [{ position: 1}]
+  @UI.lineItem: [{ position: 1 }]
+  MaterialDocument;
+  @UI.lineItem: [{ position: 3 }]
+  MaterialDocumentItem;
+  @UI.lineItem: [{ position: 4 }]
+  Plant;
+  @UI.hidden: true
+  PlantName;
+  @UI.selectionField: [{ position: 3 }]
+  @UI.lineItem: [{ position: 5 }]
+  StorageLocation;
+  @UI.hidden: true
+  StorageLocationName;
+  @UI.lineItem: [{ position: 18 }]
+  Material;
+  @UI.lineItem: [{ position: 7 }]
+  MaterialDescription;
+  @UI.lineItem: [{ position: 8 }]
+  EntryUnit;
+  @UI.lineItem: [{ position: 9 }]
+  QuantityInEntryUnit;
+  @UI.lineItem: [{ position: 10 }]
+  Batch;
+  @UI.lineItem: [{ position: 11 }]
+  SalesOrder;
+  @UI.lineItem: [{ position: 12 }]
+  SalesOrderItem;
+  @UI.lineItem: [{ position: 13 }]
+  GoodsMovementType;
+  @UI.lineItem: [{ position: 14 }]
+  InventorySpecialStockType;
+  @UI.lineItem: [{ position: 15 }]
+  @EndUserText.label: 'WBS Element'
+  WBSElementInternalID;
+  @UI.lineItem: [{ position: 16 }]
+  IssuingOrReceivingPlant;
+  @UI.lineItem: [{ position: 17 }]
+  @UI.hidden: true
+  IssuingOrReceivingPlantName;
+  @UI.lineItem: [{ position: 6 }]
+  IssuingOrReceivingStorageLoc;
+  @UI.hidden: true
+  IssuingOrReceivingSLocName;
+  @UI.lineItem: [{ position: 19 }]
+  IssuingOrReceivingMaterial;
+  @UI.lineItem: [{ position: 20 }]
+  IssuingOrReceivingBatch;
+  @UI.lineItem: [{ position: 21 }]
+  CostCenter;
+  @UI.lineItem: [{ position: 22 }]
+  GLAccount;
+  @UI.lineItem: [{ position: 23 }]
+  @EndUserText.label: 'Số Lot'
+  LotNum;
+  @UI.lineItem: [{ position: 24 }]
+  @EndUserText.label: 'Ghi chú'
+  MaterialDocumentItemText;
+  @UI.lineItem: [{ position: 25 }]
+  @EndUserText.label: 'Gross Weight'
+  GrossWeight;
+  @UI.lineItem: [{ position: 26 }]
+  @EndUserText.label: 'Quantity Gross Weight'
+  QuantityGrossWeight;
+  @UI.lineItem: [{ position: 27 }]
+  @EndUserText.label: 'Hạn sử dụng'
+  ExpirationDate;
+  @UI.selectionField: [{ position: 4 }]
+  @UI.lineItem: [{ position: 50 }]
+  CreationDate;
+  @UI.hidden: true
+  CreatedByUser;
+  @UI.hidden: true
+  YY1_NguoiTao_MMI;
+  @UI.lineItem: [{ position: 60 }]
+  @EndUserText.label: 'Người tạo'
+  PersonFullName;
+}

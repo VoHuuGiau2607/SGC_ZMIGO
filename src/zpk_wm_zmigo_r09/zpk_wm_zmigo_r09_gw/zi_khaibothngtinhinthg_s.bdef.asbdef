@@ -1,0 +1,88 @@
+managed with additional save implementation in class ZBP_I_KHAIBOTHNGTINHINTHG_S unique;
+strict;
+with draft;
+define behavior for ZI_KhaiBOThNgTinHiNThG_S alias KhaiBOThNgTinHiNAll
+draft table ZTB_WM_SHOW_D_S
+with unmanaged save
+lock master total etag LastChangedAtMax
+authorization master( global )
+
+{
+  field ( readonly )
+   SingletonID;
+
+  field ( features : instance )
+   TransportRequestID;
+
+  field ( notrigger )
+   SingletonID,
+   LastChangedAtMax;
+
+
+  update;
+  internal create;
+  internal delete;
+
+  draft action ( features : instance ) Edit with additional implementation;
+  draft action Activate optimized;
+  draft action Discard;
+  draft action Resume;
+  draft determine action Prepare;
+  action ( features : instance ) SelectCustomizingTransptReq parameter D_SelectCustomizingTransptReqP result [1] $self;
+
+  association _KhaiBOThNgTinHiNThG { create ( features : instance ); with draft; }
+
+  validation ValidateTransportRequest on save ##NOT_ASSIGNED_TO_DETACT { create; update; }
+
+  side effects {
+    action SelectCustomizingTransptReq affects $self;
+  }
+  }
+
+define behavior for ZI_KhaiBOThNgTinHiNThG alias KhaiBOThNgTinHiNThG ##UNMAPPED_FIELD
+persistent table ZTB_WM_SHOW_GW
+draft table ZTB_WM_SHOW_G_D
+lock dependent by _KhaiBOThNgTinHiNAll
+authorization dependent by _KhaiBOThNgTinHiNAll
+
+{
+  field ( mandatory : create )
+   Bwart,
+   Werks,
+   Lgort,
+   Umwrk,
+   Umlgo,
+   Mtart;
+
+  field ( readonly )
+   SingletonID;
+
+  field ( readonly : update )
+   Bwart,
+   Werks,
+   Lgort,
+   Umwrk,
+   Umlgo,
+   Mtart;
+
+  field ( notrigger )
+   SingletonID;
+
+
+  update( features : global );
+  delete( features : global );
+
+  mapping for ZTB_WM_SHOW_GW
+  {
+    Bwart = BWART;
+    Werks = WERKS;
+    Lgort = LGORT;
+    Umwrk = UMWRK;
+    Umlgo = UMLGO;
+    Mtart = MTART;
+  }
+
+  association _KhaiBOThNgTinHiNAll { with draft; }
+
+  validation ValidateTransportRequest on save ##NOT_ASSIGNED_TO_DETACT { create; update; delete; }
+}

@@ -1,0 +1,69 @@
+@Metadata.layer: #CUSTOMER
+@UI: {
+  headerInfo: {
+    typeName: 'KhaiBOThNgTinHiNThG', 
+    typeNamePlural: 'KhaiBOThNgTinHiNThGs', 
+    title: {
+      type: #STANDARD, 
+      label: 'Khai báo thông tin hiển thị Gross Weight', 
+      value: 'Bwart'
+    }
+  }
+}
+annotate view ZI_KhaiBOThNgTinHiNThG with
+{
+  @UI.identification: [ {
+    position: 1 
+  } ]
+  @UI.lineItem: [ {
+    position: 1 
+  } ]
+  @UI.facet: [ {
+    id: 'ZI_KhaiBOThNgTinHiNThG', 
+    purpose: #STANDARD, 
+    type: #IDENTIFICATION_REFERENCE, 
+    label: 'Khai báo thông tin hiển thị Gross Weight', 
+    position: 1 
+  } ]
+  Bwart;
+  
+  @UI.identification: [ {
+    position: 2 
+  } ]
+  @UI.lineItem: [ {
+    position: 2 
+  } ]
+  Werks;
+  
+  @UI.identification: [ {
+    position: 3 
+  } ]
+  @UI.lineItem: [ {
+    position: 3 
+  } ]
+  Lgort;
+  
+  @UI.identification: [ {
+    position: 4 
+  } ]
+  @UI.lineItem: [ {
+    position: 4 
+  } ]
+  Umwrk;
+  
+  @UI.identification: [ {
+    position: 5 
+  } ]
+  @UI.lineItem: [ {
+    position: 5 
+  } ]
+  Umlgo;
+  
+  @UI.identification: [ {
+    position: 6 
+  } ]
+  @UI.lineItem: [ {
+    position: 6 
+  } ]
+  Mtart;
+}

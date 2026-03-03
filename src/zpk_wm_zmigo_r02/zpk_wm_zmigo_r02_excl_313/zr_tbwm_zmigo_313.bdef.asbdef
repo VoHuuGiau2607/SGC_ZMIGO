@@ -1,0 +1,53 @@
+managed implementation in class ZBP_R_TBWM_ZMIGO_313 unique;
+strict ( 2 );
+with draft;
+extensible;
+define behavior for ZR_TBWM_ZMIGO_313 alias ZrTbwmZmigo313
+persistent table ZTB_WM_ZMIGO_313
+extensible
+draft table ZTBWM_ZMGO_313_D
+etag master LocalLastChangedAt
+lock master total etag LastChangedAt
+authorization master( global )
+{
+  field ( mandatory : create )
+   MaterialDocumentYear,
+   MaterialDocument,
+   MaterialDocumentItem;
+
+  field ( readonly )
+   LocalCreatedBy,
+   LocalCreatedAt,
+   LocalLastChangedBy,
+   LocalLastChangedAt,
+   LastChangedAt;
+
+  field ( readonly : update )
+   MaterialDocumentYear,
+   MaterialDocument,
+   MaterialDocumentItem;
+
+
+  create;
+  update;
+  delete;
+
+  draft action Activate optimized;
+  draft action Discard;
+  draft action Edit;
+  draft action Resume;
+  draft determine action Prepare;
+
+  mapping for ZTB_WM_ZMIGO_313 corresponding extensible
+  {
+    MaterialDocumentYear = material_document_year;
+    MaterialDocument = material_document;
+    MaterialDocumentItem = material_document_item;
+    LocalCreatedBy = local_created_by;
+    LocalCreatedAt = local_created_at;
+    LocalLastChangedBy = local_last_changed_by;
+    LocalLastChangedAt = local_last_changed_at;
+    LastChangedAt = last_changed_at;
+  }
+
+}
